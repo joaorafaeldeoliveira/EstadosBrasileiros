@@ -1,109 +1,141 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f0f8ff;
-    margin: 0;
-    padding: 20px;
-  }
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 20px;
+}
 
-  h1 {
-    color: #2c3e50;
-    margin-bottom: 10px;
-  }
+h1 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
 
-  #game-container {
-    max-width: 900px;
-    margin: 0 auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-  }
+#game-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
 
-  #pergunta {
-    font-size: 24px;
-    margin: 20px;
-    font-weight: bold;
-    color: #2c3e50;
-    min-height: 36px;
-  }
+#pergunta {
+  font-size: 1.5rem;
+  margin: 20px;
+  font-weight: bold;
+  color: #2c3e50;
+  min-height: 36px;
+}
 
-  #mensagem {
-    font-size: 20px;
-    margin: 10px;
-    font-weight: bold;
-    min-height: 30px;
-  }
+#mensagem {
+  font-size: 1.2rem;
+  margin: 10px;
+  font-weight: bold;
+  min-height: 30px;
+}
 
-  #pontuacao {
-    font-size: 18px;
-    margin: 10px;
-    color: #2c3e50;
-  }
+#pontuacao,
+#timer {
+  font-size: 1rem;
+  margin: 10px;
+  color: #2c3e50;
+}
 
-  svg {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    display: block;
-    cursor: pointer;
-  }
+svg {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+}
 
-  .estado {
-    fill: #cce5ff;
-    stroke: #333;
-    stroke-width: 0.5;
-    transition: fill 0.2s;
-  }
+.estado {
+  fill: #cce5ff;
+  stroke: #333;
+  stroke-width: 0.5;
+  transition: fill 0.2s;
+}
 
-  .estado:hover {
-    fill: #66b3ff;
-  }
+.estado:hover {
+  fill: #66b3ff;
+}
 
-  .acerto {
-    fill: #28a745 !important;
-    stroke: #218838;
-    stroke-width: 1;
-  }
+.acerto {
+  fill: #28a745 !important;
+  stroke: #218838;
+  stroke-width: 1;
+}
 
-  .erro {
-    fill: #dc3545 !important;
-    stroke: #c82333;
-    stroke-width: 1;
-  }
+.erro {
+  fill: #dc3545 !important;
+  stroke: #c82333;
+  stroke-width: 1;
+}
 
-  #controles {
-    margin-top: 20px;
-  }
+#controles {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
 
-  button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 5px;
-    transition: background-color 0.2s;
-  }
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
 
-  button:hover {
-    background-color: #0069d9;
-  }
-
-  #timer {
-    font-size: 18px;
-    margin: 10px;
-    color: #2c3e50;
-  }
+button:hover {
+  background-color: #0069d9;
+}
 
 .state {
-    cursor: pointer;
-    fill: #D3DEE2;
+  cursor: pointer;
+  fill: #D3DEE2;
 }
 
 .state:hover {
-    fill: #FCAF17;
-    transition: 0.1s linear;
+  fill: #FCAF17;
+  transition: 0.1s linear;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #game-container {
+    padding: 15px;
+  }
+
+  #pergunta {
+    font-size: 1.2rem;
+  }
+
+  #mensagem {
+    font-size: 1rem;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  #controles {
+    flex-direction: column;
+    gap: 8px;
+  }
 }

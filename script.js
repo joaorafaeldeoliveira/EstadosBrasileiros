@@ -31,7 +31,7 @@ const estados = [
 
   let estadoAtual = null;
   let pontuacao = 0;
-  let tempoRestante = 30;
+  let tempoRestante = 60;
   let timer = null;
   let jogoAtivo = false;
 
@@ -44,7 +44,7 @@ const estados = [
   
   function iniciarJogo() {
     pontuacao = 0;
-    tempoRestante = 30;
+    tempoRestante = 60;
     jogoAtivo = true;
     atualizarPontuacao();
     atualizarTimer();
