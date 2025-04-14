@@ -92,6 +92,7 @@ function configurarEventosEstados() {
         mensagemElement.textContent = "✅ Acertou! +1 ponto";
         pontuacao++;
         tempoRestante = Math.min(tempoRestante + 3, 120);
+        
       } else {
         estado.classList.add('erro');
         document.getElementById(estadoAtual.id)?.classList.add('acerto');
